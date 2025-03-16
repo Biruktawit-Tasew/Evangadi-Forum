@@ -1,0 +1,120 @@
+.container__wrapper{
+   
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    width: 100%;
+}
+.container__wrapper{
+    background-color: #F8F8F8;
+    background-image: url("../../img/download.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.login__container {
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 605px;
+    height: 517px;
+    /* max-width: 450px; */
+}
+.login__container h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+    font-size: 24px;
+}
+.form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form input {
+    background-color: #E7F0FE;
+    min-width: 300px; 
+    max-width: 625px; 
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #dee2e6;
+    box-shadow: 0 0 0 2px rgba(179, 180, 180, 0.25);
+}
+.form input:hover{
+    box-shadow: 0 0 0 2px rgba(65, 5, 129, 0.25);
+}
+.form input{
+    color: #6c757d;
+    padding: 20px;
+    background-color: white;
+}
+.login__button {
+    min-width: 300px; 
+    max-width: 625px; 
+    width: 100%; 
+    padding: 12px;
+    background-color: #526cf0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+
+}
+.login__button{
+    padding: 20px;
+}
+.login__button:hover {
+    background-color: #3150ee;
+}
+
+.forget {
+    margin-top: 0px;
+    padding-bottom: 50px;
+    text-align: right;
+} 
+
+.forget a {
+    color: #fa972b;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    /* margin: 0px 0; */
+}
+.signup {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 24px;
+    color: #666;
+   
+}
+
+.signup a {
+    color: #fa972b;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+.eye{
+    position: sticky;
+    position: absolute;
+    right:25px;
+    top: 15px;
+   
+    color: #EAC0C1;
+}
+.eye:hover{
+    color: #fa972b;
+}
+

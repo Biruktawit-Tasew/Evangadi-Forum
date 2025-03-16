@@ -1,9 +1,12 @@
 import React from "react";
 import style from "./footer.module.css";
 import logo from "../../assets/evangadi-logo-footer.png";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import { FaFacebookF } from "react-icons/fa";
+import { TiSocialInstagram } from "react-icons/ti";
+
+import { FaYoutube } from "react-icons/fa6";
+
+
 
 function Footer() {
   return (
@@ -16,15 +19,15 @@ function Footer() {
               <img src={logo} alt="" />
             </a>
           </div>
-          <div>
+          <div className={style.footer_icons}>
             <a href="https://www.facebook.com/evangaditech" target="_blank">
-              <FacebookOutlinedIcon size={30} />
+              <FaFacebookF size={30} />
             </a>
             <a href="https://www.instagram.com/evangaditech" target="_blank">
-              <InstagramIcon size={30} />
+              <TiSocialInstagram size={30} />
             </a>
             <a href="https://www.youtube.com/@EvangadiTech" target="_blank">
-              <YouTubeIcon size={30} />
+              <FaYoutube size={30} />
             </a>
           </div>
         </div>
