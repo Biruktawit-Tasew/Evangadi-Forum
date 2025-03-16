@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.signUp_container{
+   width: 605px;
+   height: 517px;
+   display: flex; 
+   flex-direction: column;
+   border-radius: 5px;
+   border: none;
+   padding: 20px;
+   margin-top: 110px;
+   margin-left:100px ;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+   font-family: "Nunito", sans-serif;
+}
+.signUp_container h2{
+    font-size: 25px;
+    margin-top: 20px ;
+    
+}
+.signUp_container p{
+    
+    margin-top: 8px ;
+    
+}
+
+.signUp_container h2, p{
+text-align: center;
+}
+.signUp_container p a{
+   margin-left: 5px;
+   color:  #fc9105;
+}
+
+.signUp_container form{
+   display: flex;
+   flex-direction: column;
+   gap: 10px; 
+}
+
+.formGroup{
+  position: relative;
+  width: 100%;
+  
+}
+
+.signUp_container form input {
+   font-size: 15px;
+  width: 100%;
+  padding: 20px 16px;
+  height: 45px;
+  border: 1px solid rgb(236, 230, 230);
+  outline:1px solid rgb(249, 245, 245); 
+  border-radius: 3px;
+  background-color: white;
+  font-family: "Nunito", sans-serif;
+  
+}
+.errorMessage{
+   font-family: "Nunito", sans-serif ;
+                color: red;
+                font-size: 13px;
+                margin-top: -10px;
+                margin-left: 5px;
+              
+}
+
+.signUp_container form input:focus {
+  border-bottom: 2.5px solid transparent;
+  outline: none;
+}
+
+.formGroup:focus-within::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2.5px;
+  background: #fc9105;
+  animation: borderBottomAnimation 0.4s ease-in-out forwards;
+}
+
+@keyframes borderBottomAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.username_input{
+      margin-top: 40px
+}
+.nameFields {
+  display: flex;
+  gap: 10px; 
+}
+
+.formGroup {
+  flex: 1; 
+}
+.centeredText {
+  text-align: center; 
+  margin-top: 5px;
+  
+  
+}
+.centeredText a{
+color: #fc9105;
+}
+.signUp_Button{
+  border: none; 
+  background-color: #0B5ED7; 
+  border-radius: 5px;
+  width: 100%;
+  height: 46px;
+  margin-top: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: 550;
+  font-size: 15px;
+}
+.signUp_Button:hover{
+   background-color: #fc9105
+}
+.account {
+   text-align: center;
+    color:  #fc9105;
+      margin-top: 5px;
+}
+@media (max-width: 768px) {
+  .signUp_container {
+    width: 70%; 
+    height: 600px;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 50px; 
+    padding: 15px; 
+  }
+
+  .nameFields {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  .signUp_container form input {
+    padding: 15px 12px; 
+   
+    height: 50px; 
+  }
+
+  .signUp_Button {
+    font-size: 14px; 
+  }
+}
