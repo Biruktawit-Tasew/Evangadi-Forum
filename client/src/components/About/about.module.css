@@ -1,0 +1,50 @@
+.outer_about_wrapper {
+  padding: 25px 0;
+  margin-left: 20px;
+}
+
+.inner_container {
+  width: 100%;
+  margin: auto;
+  padding: 20px 0 70px 20px;
+  align-items: center;
+}
+
+.inner_container h1,
+.inner_container p {
+  color: #4f4863;
+  padding: 8px;
+}
+
+.about p {
+  color: #fe8302;
+  /* margin-bottom: -30px; */
+}
+
+.inner_container h1 {
+  font-size: 30px;
+  margin-bottom: -10px;
+}
+
+.paragraph_container p {
+  font-size: 15px;
+  line-height: 2;
+}
+
+.about_btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: #fe8302;
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 150px;
+  height: 25px;
+}
+
+@media (max-width: 768px) {
+  .outer_about_wrapper {
+    display: none;
+  }
+}
