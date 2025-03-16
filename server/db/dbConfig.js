@@ -1,12 +1,18 @@
-const mysql = require("mysql2");
-const dotenv = require("dotenv")
-dotenv.config()
-const connection = mysql.createPool({
+const mysql2 = require("mysql2");
+require("dotenv").config();
+const dbConnection = mysql2.createPool({
   host: "localhost",
-  user: "evangadi-admin",
-  password: process.env.DB_PASSWORD,
-  database: "evangadi-db",
+  user: process.env.USER,
+  password: process.env.PASSWORD,
+  database: process.env.DATABASE,
+  connectionLimit: 10,
+});
+dbConnection.getConnection((err) => {
+  if (err) {
+    console.error("Error connecting to MySQL:", err);
+    return;
+  }
+  console.log("Connected to MySQL database");
 });
 
-
-module.exports = connection.promise()
+module.exports = dbConnection.promise();
