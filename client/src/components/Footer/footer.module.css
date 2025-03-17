@@ -43,14 +43,6 @@ svg:hover{
   background: white;
   color: #84B4FE;
 }
-
-
-
-
-
-
-
-
 .middle_links a:hover,
 .right_side_links a:hover,
 .right_side_links p:hover {
@@ -62,7 +54,9 @@ svg:hover{
     display: block;
     padding: 50px 20px;
     margin:0 auto ;
-    width: 70%;
+    width: 100%;
+    
+    text-align: center;
   }
   .footer_inner_container h4 {
     margin-top: 20px;

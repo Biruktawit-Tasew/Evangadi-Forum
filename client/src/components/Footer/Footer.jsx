@@ -3,7 +3,6 @@ import style from "./footer.module.css";
 import logo from "../../assets/evangadi-logo-footer.png";
 import { FaFacebookF } from "react-icons/fa";
 import { TiSocialInstagram } from "react-icons/ti";
-
 import { FaYoutube } from "react-icons/fa6";
 
 
