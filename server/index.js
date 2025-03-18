@@ -27,14 +27,20 @@ start()
 
 //command to create table on mysql
 
-//CREATE TABLE if not exists users(
+//CREATE TABLE if not exists registration(
 // user_id INT(20) NOT NULL AUTO_INCREMENT,
 // username VARCHAR(20) NOT NULL,
-// firstname VARCHAR(20) NOT NULL,
-// lastname VARCHAR(20) NOT NULL,
 // email VARCHAR(40) NOT NULL,
 // password VARCHAR(100) NOT NULL,
 // PRIMARY KEY (user_id)
+// );
+//CREATE TABLE if not exists profile(
+// user_profile_id INT(20) NOT NULL AUTO_INCREMENT,
+// user_id INT(20) NOT NULL,
+// firstname VARCHAR(20) NOT NULL,
+// lastname VARCHAR(20) NOT NULL,
+// PRIMARY KEY (user_profile_id),
+// FOREIGN KEY (user_id) REFERENCES registration(user_id));
 // );
 //CREATE TABLE if not exists questions(
 // id INT(20) NOT NULL AUTO_INCREMENT,
@@ -43,6 +49,7 @@ start()
 // title VARCHAR(50) NOT NULL,
 // description TEXT NOT NULL,
 // tag VARCHAR(20),
+// created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 // PRIMARY KEY (id,question_id),
 // FOREIGN KEY (user_id) REFERENCES users(user_id));
 

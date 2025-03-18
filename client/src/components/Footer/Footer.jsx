@@ -8,7 +8,7 @@ import { FaYoutube } from "react-icons/fa6";
 
 
 function Footer() {
-  return (
+  return (  
     <section className={style.footer_container}>
       <section className={style.footer_inner_container}>
         {/* left side links wrapper */}
